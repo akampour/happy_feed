@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html manifest="happyfeed.appcache">
+<head>
+<title>Happy Feed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<header>
+			<h1><a class="no_underline" href="index.html">Happy Feed</a></h1>
+		</header>
+
+		<div class="row">
+			<nav class="table-col-3 col-m-3">
+				<ul>
+					<li><a href="index.html">Home</li>
+					<li><a href="recipes.html">Recipes</li>
+					<li><a href="articles.html">Tips and small recipes</li>
+					<li><a href="contact.html">Contact form</li>
+				</ul>
+			</nav>
+
+			<div class="table-col-6 col-m-6">
+				<section>
+					<header>
+					  <h1>Contact Us</h1>
+					  <p>If you have any questions, contact us <a href="mailto:happy.feed@gmail.com">here</a></p>
+					</header>
+				</section>
+				<form name="contactform" action="index.html">
+					<label>Name:</label>
+					<input type="text" name="query" />
+					<br>
+					<label>Email:</label>
+					<input type="email" name="query" />
+					<br>
+					<label>Query:</label>
+					<textarea placeholder="Write your query"></textarea>
+					<a href="javascript: contactformsubmit()" class="button" type="submit">Submit</a>
+				</form>
+			</div>
+			<div class="table-col-3">
+				<aside>
+					<h2>What is mediterranean cuisine?</h2>
+					<p>The majority of this cuisine come from plants.Fruits, seeds, vegentables, herbs and any spices a</p>
+					<h2>Why mediterranean cuisine?</h2>
+					<p>Because it icludes many vegetables, fruits, cereal products and moderate amount of fish and white meat.It is extra healthy and energetic.</p>
+					<h2>Where can I find mediterranean cuisine?</h2>
+					<p>There are many Mediterranean supermarkets as well as restaurants that you can find everywhere worldiwide.Don't hesitate to try them.</p>
+				</aside>
+			</div>
+		</div>
+
+		<footer>
+			<p>Site designed by Alexandra Kampouraki. All rights reserved. 2016</p>
+			<p>To discuss any queries, please <a href="mailto:happy.feed@gmail.com">contact us.</a></p>
+		</footer>
+		<script type="text/javascript">
+			function contactformsubmit()
+			{
+			    if	(document.contactform.onsubmit && !document.contactform.onsubmit())
+			    {
+			        return;
+			    }
+				document.contactform.submit();
+			}
+		</script>
+	</body>
+</html>
